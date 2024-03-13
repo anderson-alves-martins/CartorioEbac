@@ -107,47 +107,60 @@ int main()
 {
 	int opcao=0; //Definindo variaveis
 	int laco=1;
-	for(laco=1;laco=1;)
+	char senhadigitada[]="a";
+	int comparacao;
+		
+	printf("########  CARTÓRIO DE NOMES   ########\n\n");
+	printf("Login de administrador!\n\nDigite a sua senha:");
+	scanf("%s",senhadigitada);
 	
+	comparacao = strcmp(senhadigitada,"admin");
+	
+	if(comparacao == 0)
 	{	
-		system("cls"); //limpa tela	
-		setlocale(LC_ALL, "Portuguese_Brazil.1252");
+		system ("cls");
+		for(laco=1;laco=1;)
+		{	
+			system("cls"); //limpa tela	
+			setlocale(LC_ALL, "Portuguese_Brazil.1252");
 		
-	
-		printf("########  CARTÓRIO DE NOMES   ########\n\n");
-		printf("Escolha a opção desejada no menu:\n\n");
-		printf("\t1 - REGISTRAR NOMES\n"); // \t da espaÃ§o no inicio
-		printf("\t2 - CONSULTAR NOMES\n"); // \n proxima linha
-		printf("\t3 - DELETAR NOMES\n");
-		printf("\t4 - SAIR DO SISTEMA\n\n\n");
-		printf("Opção:");
-		//printf("Esse software foi escrito por Anderson Martins \n\n");
-	
-		scanf("%d", &opcao); //armazena a escolha do usuário
-		
-		switch(opcao)
-		{
-			case 1:
-			registro();//chama função
-			break;
+			printf("########  CARTÓRIO DE NOMES   ########\n\n");
+			printf("Escolha a opção desejada no menu:\n\n");
+			printf("\t1 - REGISTRAR NOMES\n"); // \t da espaÃ§o no inicio
+			printf("\t2 - CONSULTAR NOMES\n"); // \n proxima linha
+			printf("\t3 - DELETAR NOMES\n");
+			printf("\t4 - SAIR DO SISTEMA\n\n\n");
+			printf("Opção:");
+			//printf("Esse software foi escrito por Anderson Martins \n\n");
 			
-			case 2:
-			consulta();//chama função
-			break;
+			scanf("%d", &opcao); //armazena a escolha do usuário
 			
-			case 3:
-			deletar();//chama função
-			break;
-			
-			case 4:
-			printf("Obrigado por utilizar o sistema!\n");
-			return 0;
-			break;
-			
-			default:
-			printf("Essa opção não está disponivel!\n");
-			system("pause");
-			break;
-		}	
-	}
+			switch(opcao)
+			{
+				case 1:
+				registro();//chama função
+				break;
+				
+				case 2:
+				consulta();//chama função
+				break;
+				
+				case 3:
+				deletar();//chama função
+				break;
+				
+				case 4:
+				printf("Obrigado por utilizar o sistema!\n");
+				return 0;
+				break;
+				
+				default:
+				printf("Essa opção não está disponivel!\n");
+				system("pause");
+				break;
+			}//fim da seleção
+		}
+ 	}	
  }
+ 
+ 
