@@ -1,0 +1,50 @@
+INT MAIN
+	100% CORRETA
+
+	REGISTRO()
+		Inicia e encerra na mesma função
+		100% Correta
+
+	CONSULTA()
+		Inicia e encerra na mesma função
+		100% Correta
+	DELETAR()
+
+		Sempre vai retornar que o usuario não esta no sistama (não impacta na funcionalidade para o cliente)
+		Inicia e encerra na mesma função
+		100% Correta
+
+
+	Bibliotecas: ok
+
+
+Login:
+	Acesso de admin: ok
+	Recusa de acesso qualquer senha incorreta: ok
+
+Função Menu:
+	Criada Corretamente, a instancia iniciou e encerrou conforme esperado: ok
+	Chamada de todas as funções, INSERIR, CONSULTAR, DELETAR: ok
+
+FUNÇÃO INSERIR:
+	Menu funcionou corretamente: ok
+	Criou o arquivo: ok
+	Inserção de CPF, NOME, SOBRENOME E CARGO: ok
+	Retornou ao menu: ok
+	100% funcional
+
+FUNÇÃO CONSULTAR:
+	Menu funcionou corretamente: ok
+	Consulta a CPF inexistente: ok
+	Consulta a CPF existente:ok
+	Retorno ao menu: ok
+	100% funcional
+
+FUNÇÃO DELETAR:
+	Menu funcionou corretamente: ok
+	solicitação de "CPF": ok
+	100% funcional
+
+Sair do sistema ok
+
+100%
